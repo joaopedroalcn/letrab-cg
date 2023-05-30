@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Triangulação de Delaunay com WebGL</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <div>
+        <button onclick="randomizePoints()">Randomize Points</button>
+        <button onclick="clearPoints()">Limpar Pontos</button>
+        <button onclick="performDelaunayTriangulation()">Triangulação de Delaunay</button>
+    </div>
+
+    <script src="https://unpkg.com/delaunator@5.0.0/delaunator.min.js"></script>
+    <script src="av2-2.JS"></script>
+</body>
+</html>
